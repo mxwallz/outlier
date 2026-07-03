@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outlier · Rebuild your next 90 days</title>
+<!-- Track A LP v2 (LEAN rewrite, Marco 7/03: cut body copy ~half, single job = start the diagnostic / apply).
+     Cut from prior v2: standalone origin prose (compressed to one credential line under the receipt), the whole 3-step "rebuild" section.
+     Kept: hero (Direction O + USP kicker + chips), the system diagram (visual, fast), the +23% receipt card, a tight close.
+     Belief now lives in the reconstruction + the (pending) VSL, not on the cold page.
+     Gates: RYAN REVIEW inline, David +23% approval, custody check, legal footer. CTA → MP diagnostic ?src=growstack-v2. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#fbfaf7;--ink:#0b1220;--sub:#5a6474;--green:#0e9f5f;--greenDark:#0a7a49;--dark:#0a0e16;--line:rgba(11,18,32,.12);}
+  *{box-sizing:border-box;margin:0;}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--greenDark);}
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px;}
+  .cta{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:17px 34px;border-radius:8px;transition:transform .15s ease, box-shadow .15s ease;}
+  .cta:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(11,18,32,.18);}
+  .chip{font-family:'JetBrains Mono',monospace;font-size:14px;padding:10px 18px;border:1.5px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer;transition:all .12s ease;}
+  .chip:hover{border-color:var(--ink);}
+  .chip.on{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .chiprow{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+  h1,h2{letter-spacing:-1.5px;font-weight:900;}
+  @keyframes streamflow{0%{transform:translateX(0);opacity:.35}50%{opacity:1}100%{transform:translateX(16px);opacity:.35}}
+  @keyframes nodeglow{0%,100%{opacity:.85}50%{opacity:1}}
+  .sglyph{animation:streamflow 2.2s ease-in-out infinite;}
+  @media(max-width:760px){.h1{font-size:40px !important;}.wrap{padding:0 20px;}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div style="border-bottom:1px solid var(--line);">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px;">
+    <span style="font-weight:900;font-size:19px;letter-spacing:1px;">OUTLIER</span>
+    <span class="mono" style="font-size:11px;letter-spacing:1.5px;color:var(--sub);">APPLICATION ONLY</span>
+  </div>
+</div>
+
+<!-- HERO (the pitch + the conversion surface) -->
+<section>
+  <div class="wrap" style="padding-top:88px;padding-bottom:76px;text-align:center;max-width:820px;">
+    <div class="eyebrow" style="margin-bottom:24px;">For people with real money and no time to watch it</div>
+    <h1 class="h1" style="font-size:54px;line-height:1.05;">Why wealthy, busy professionals are firing their wealth managers for a desk built for one portfolio: <span style="color:var(--green);">theirs</span>.</h1>
+    <p style="margin:26px auto 0;font-size:19px;line-height:1.6;color:var(--sub);max-width:600px;">Most wealthy professionals are still parked with a wealth manager. The outliers run their own money on proprietary AI that hands them the full power of institutional analysis, built by the mind behind McLaren's race-strategy AI.</p>
+
+    <div style="margin-top:40px;display:flex;flex-direction:column;gap:12px;align-items:center;">
+      <div class="mono" style="font-size:12px;color:var(--sub);letter-spacing:1px;">WHAT ARE YOU WORKING WITH?</div>
+      <div class="chiprow">
+        <button class="chip" data-g="stack" data-v="100k">$100k</button><button class="chip" data-g="stack" data-v="250k">$250k</button><button class="chip" data-g="stack" data-v="1m">$1M</button><button class="chip" data-g="stack" data-v="5m">$5M+</button>
+      </div>
+      <div class="mono" style="font-size:12px;color:var(--sub);letter-spacing:1px;margin-top:8px;">WHERE SHOULD IT BE IN 12 MONTHS?</div>
+      <div class="chiprow">
+        <button class="chip" data-g="target" data-v="10">+10%</button><button class="chip" data-g="target" data-v="25">+25%</button><button class="chip" data-g="target" data-v="2x">2x</button><button class="chip" data-g="target" data-v="custom">I'll type it</button>
+      </div>
+    </div>
+    <div style="margin-top:30px;">
+      <a class="cta" id="mainCta" href="diagnostic.html?src=growstack-v2">Rebuild my next 90 days →</a>
+      <div class="mono" style="margin-top:14px;font-size:12px;color:var(--sub);">Private. Your numbers stay anonymous until you decide otherwise.</div>
+      <div class="mono" style="margin-top:16px;font-size:13px;letter-spacing:.5px;color:var(--ink);font-weight:600;">Wall Street rents you access. Outlier hands you the desk and the keys.</div>
+    </div>
+    <!-- INTERIM DEMO VIDEO SLOT: 60-90s voice-note-to-allocation screen recording goes here until the full VSL exists. -->
+  </div>
+</section>
+
+<!-- CREDENTIALS (story flow: Ryan's arc as the credibility spine; HFT to F1 to Spa to portfolio) -->
+<section style="border-bottom:1px solid var(--line);">
+  <div class="wrap" style="padding-top:76px;padding-bottom:76px;max-width:760px;">
+    <div class="eyebrow" style="margin-bottom:18px;">Who built it</div>
+    <h2 style="font-size:36px;line-height:1.12;">For years the real edge belonged to the firm charging you 1%. That just ended.</h2>
+    <p style="margin-top:22px;font-size:17.5px;line-height:1.75;color:var(--sub);">Ryan built trading systems for a living, the kind where a millisecond of edge is the whole business. The banks would have paid him a fortune to run their money. Instead he aimed the machine at his own, saw what his wealth manager had quietly cost him for years, and fired the man the same month.</p>
+    <p style="margin-top:16px;font-size:17.5px;line-height:1.75;color:var(--sub);">The racing work is how you know the machine is real. He built McLaren's racing AI by himself, the kind that reads a live wall of data and makes the winning call a split second before anyone else. A portfolio is the easier problem, and for the first time that edge sits in your hands instead of theirs.</p>
+    <div class="mono" style="margin-top:30px;display:flex;gap:22px;flex-wrap:wrap;font-size:11px;letter-spacing:1.5px;color:var(--greenDark);">
+      <span>HFT TRADING SYSTEMS</span><span style="color:var(--line);">/</span><span>McLAREN RACING AI</span><span style="color:var(--line);">/</span><span>NOW ON PRIVATE PORTFOLIOS</span>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEM (dark, diagram = fast visual proof it's a real system; one line only) -->
+<section style="background:var(--dark);color:#e8edf4;">
+  <div class="wrap" style="padding-top:74px;padding-bottom:74px;text-align:center;">
+    <div class="eyebrow" style="color:#2fd383;margin-bottom:16px;">How it runs</div>
+    <h2 style="font-size:34px;line-height:1.1;color:#fff;max-width:640px;margin:0 auto;">You have used the chatbots. This is the system that does the work they only describe.</h2>
+    <p style="margin:20px auto 0;font-size:16.5px;line-height:1.65;color:#aeb9c6;max-width:600px;">Agents research, backtest, and watch your holdings around the clock. A room of people running their own money sharpens the calls. You make every one, and nothing leaves your accounts.</p>
+    <svg viewBox="0 0 900 240" style="width:100%;max-width:780px;margin:44px auto 0;height:auto;">
+      <defs><marker id="arr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#2fd383"/></marker></defs>
+      <g stroke="#2fd383" stroke-width="1.6" opacity=".8" fill="none">
+        <line x1="188" y1="118" x2="268" y2="118" marker-end="url(#arr)"/>
+        <line x1="512" y1="118" x2="592" y2="118" marker-end="url(#arr)"/>
+      </g>
+      <path d="M 792 156 C 860 220, 340 260, 130 156" stroke="#2fd383" stroke-width="1.2" fill="none" opacity=".4" stroke-dasharray="4 5" marker-end="url(#arr)"/>
+      <text x="450" y="238" font-family="'JetBrains Mono',monospace" font-size="11" fill="#7d8b9d" text-anchor="middle">watchers run around the clock and feed every position back through the loop</text>
+      <g>
+        <rect x="40" y="78" width="148" height="80" rx="10" fill="#10161f" stroke="#243043"/>
+        <text x="114" y="110" font-family="'JetBrains Mono',monospace" font-size="12" fill="#2fd383" text-anchor="middle">YOU</text>
+        <text x="114" y="132" font-family="'Inter',sans-serif" font-size="12" fill="#aeb9c6" text-anchor="middle">your position,</text>
+        <text x="114" y="148" font-family="'Inter',sans-serif" font-size="12" fill="#aeb9c6" text-anchor="middle">then voice notes</text>
+      </g>
+      <g>
+        <rect x="272" y="60" width="240" height="116" rx="10" fill="#0d1f17" stroke="#2fd383"/>
+        <text x="392" y="90" font-family="'JetBrains Mono',monospace" font-size="12" fill="#2fd383" text-anchor="middle">THE AGENTS</text>
+        <text x="392" y="112" font-family="'Inter',sans-serif" font-size="12" fill="#cfe6d9" text-anchor="middle">research · backtest · watch</text>
+        <text x="392" y="130" font-family="'Inter',sans-serif" font-size="12" fill="#cfe6d9" text-anchor="middle">draft the orders</text>
+        <text x="392" y="158" font-family="'JetBrains Mono',monospace" font-size="10" fill="#5f7a6c" text-anchor="middle">HFT + F1 PEDIGREE</text>
+      </g>
+      <g>
+        <rect x="596" y="60" width="196" height="116" rx="10" fill="#10161f" stroke="#243043"/>
+        <text x="694" y="92" font-family="'JetBrains Mono',monospace" font-size="12" fill="#2fd383" text-anchor="middle">THE ROOM</text>
+        <text x="694" y="116" font-family="'Inter',sans-serif" font-size="12" fill="#aeb9c6" text-anchor="middle">people running their</text>
+        <text x="694" y="134" font-family="'Inter',sans-serif" font-size="12" fill="#aeb9c6" text-anchor="middle">own money, sharing</text>
+        <text x="694" y="152" font-family="'Inter',sans-serif" font-size="12" fill="#aeb9c6" text-anchor="middle">what actually works</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER (old way vs new way; carries the "not your advisor" contrast + the agentic show-off) -->
+<section style="border-bottom:1px solid var(--line);">
+  <div class="wrap" style="padding-top:74px;padding-bottom:74px;max-width:900px;">
+    <h2 style="font-size:34px;line-height:1.12;text-align:center;max-width:600px;margin:0 auto 44px;">That 1% fee buys you a photocopy.</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;" id="baGrid">
+
+      <!-- OLD: template photocopied and handed to everyone (static, grey) -->
+      <div style="border:1px solid var(--line);border-radius:12px;padding:28px 26px;background:#fff;">
+        <div class="mono" style="font-size:11px;letter-spacing:2px;color:var(--sub);margin-bottom:8px;">WHAT THEY SEND</div>
+        <svg viewBox="0 0 320 150" style="width:100%;height:auto;margin:8px 0 6px;">
+          <!-- master template -->
+          <rect x="132" y="8" width="56" height="40" rx="3" fill="#f1f0ec" stroke="#c3c7cf"/>
+          <line x1="140" y1="18" x2="180" y2="18" stroke="#c3c7cf" stroke-width="2"/><line x1="140" y1="26" x2="180" y2="26" stroke="#c3c7cf" stroke-width="2"/><line x1="140" y1="34" x2="168" y2="34" stroke="#c3c7cf" stroke-width="2"/>
+          <text x="160" y="60" font-family="'JetBrains Mono',monospace" font-size="9" fill="#9aa1ab" text-anchor="middle">ONE TEMPLATE</text>
+          <!-- fan arrows -->
+          <g stroke="#c3c7cf" stroke-width="1.3" fill="none">
+            <line x1="150" y1="66" x2="52" y2="92"/><line x1="160" y1="66" x2="160" y2="92"/><line x1="170" y1="66" x2="268" y2="92"/>
+          </g>
+          <!-- identical copies + identical clients -->
+          <g>
+            <rect x="34" y="94" width="36" height="30" rx="2" fill="#f1f0ec" stroke="#c3c7cf"/><circle cx="52" cy="138" r="7" fill="#e3e4e0" stroke="#c3c7cf"/>
+            <rect x="142" y="94" width="36" height="30" rx="2" fill="#f1f0ec" stroke="#c3c7cf"/><circle cx="160" cy="138" r="7" fill="#e3e4e0" stroke="#c3c7cf"/>
+            <rect x="250" y="94" width="36" height="30" rx="2" fill="#f1f0ec" stroke="#c3c7cf"/><circle cx="268" cy="138" r="7" fill="#e3e4e0" stroke="#c3c7cf"/>
+          </g>
+        </svg>
+        <p style="font-size:15px;line-height:1.55;color:var(--sub);margin-top:10px;">The same template, photocopied for every client. It reaches you after the market has already moved.</p>
+      </div>
+
+      <!-- NEW: live personalized data stream into an agent, shaped to you (animated, green) -->
+      <div style="border:1.5px solid var(--green);border-radius:12px;padding:28px 26px;background:#fff;box-shadow:0 12px 30px rgba(14,159,95,.1);">
+        <div class="mono" style="font-size:11px;letter-spacing:2px;color:var(--greenDark);margin-bottom:8px;">WHAT OUTLIER READS</div>
+        <svg viewBox="0 0 320 150" style="width:100%;height:auto;margin:8px 0 6px;">
+          <!-- live data stream (varied glyphs, animated) -->
+          <g fill="#0e9f5f">
+            <rect class="sglyph" x="6" y="30" width="10" height="6" rx="1" style="animation-delay:0s"/>
+            <circle class="sglyph" cx="14" cy="58" r="4" style="animation-delay:.3s"/>
+            <rect class="sglyph" x="4" y="78" width="14" height="5" rx="1" style="animation-delay:.6s"/>
+            <rect class="sglyph" x="8" y="98" width="8" height="9" rx="1" style="animation-delay:.9s"/>
+            <circle class="sglyph" cx="12" cy="122" r="3" style="animation-delay:1.2s"/>
+          </g>
+          <g stroke="#0e9f5f" stroke-width="1.2" opacity=".5" fill="none">
+            <line x1="26" y1="33" x2="118" y2="72"/><line x1="24" y1="58" x2="118" y2="74"/><line x1="26" y1="80" x2="118" y2="76"/><line x1="24" y1="102" x2="118" y2="78"/><line x1="20" y1="122" x2="118" y2="80"/>
+          </g>
+          <!-- agent node -->
+          <polygon points="150,50 178,66 178,98 150,114 122,98 122,66" fill="#eafaf1" stroke="#0e9f5f" stroke-width="1.6" style="animation:nodeglow 2s ease-in-out infinite"/>
+          <text x="150" y="79" font-family="'JetBrains Mono',monospace" font-size="9" fill="#0a7a49" text-anchor="middle">AGENT</text>
+          <text x="150" y="90" font-family="'JetBrains Mono',monospace" font-size="7" fill="#5f9a7c" text-anchor="middle">live</text>
+          <!-- personalized output, shaped uniquely -->
+          <line x1="180" y1="82" x2="214" y2="82" stroke="#0e9f5f" stroke-width="1.4" marker-end="url(#arrg)"/>
+          <defs><marker id="arrg" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#0e9f5f"/></marker></defs>
+          <g>
+            <rect x="222" y="46" width="86" height="72" rx="4" fill="#fff" stroke="#0e9f5f"/>
+            <!-- unique bars shaped to "you" -->
+            <rect x="232" y="96" width="9" height="14" fill="#0e9f5f"/><rect x="246" y="84" width="9" height="26" fill="#0e9f5f"/><rect x="260" y="72" width="9" height="38" fill="#0e9f5f"/><rect x="274" y="88" width="9" height="22" fill="#0e9f5f"/><rect x="288" y="78" width="9" height="32" fill="#0e9f5f"/>
+            <text x="265" y="62" font-family="'JetBrains Mono',monospace" font-size="8" fill="#0a7a49" text-anchor="middle">YOUR POSITION</text>
+          </g>
+        </svg>
+        <p style="font-size:15px;line-height:1.55;color:var(--ink);margin-top:10px;">A live read of your exact positions, rebuilt the second a thesis breaks. It never touches your money.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECEIPT (proof card + one-line origin credential; the only "belief" beat on the page) -->
+<section style="border-bottom:1px solid var(--line);">
+  <div class="wrap" style="padding-top:72px;padding-bottom:72px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;" id="receiptGrid">
+    <div>
+      <div class="eyebrow" style="margin-bottom:16px;">One account, one idea</div>
+      <h2 style="font-size:34px;line-height:1.12;">A voice note became a researched $250,000 allocation in twenty minutes.</h2>
+      <p style="margin-top:16px;font-size:16px;line-height:1.65;color:var(--sub);">Six months later, that account is up 23%, and every dollar stayed in his own name. His advisor is still sending quarterly PDFs.</p>
+    </div>
+    <div style="border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 14px 36px rgba(11,18,32,.07);overflow:hidden;">
+      <div style="padding:13px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;">
+        <span class="mono" style="font-size:11px;letter-spacing:1.5px;color:var(--sub);">STATEMENT · DEC 12</span>
+        <span class="mono" style="font-size:11px;color:var(--sub);">9:14 AM</span>
+      </div>
+      <div style="padding:22px 20px;">
+        <div class="mono" style="font-size:13px;line-height:1.6;">🎙 "how do I invest in AI data-center buildouts"</div>
+        <div style="margin:16px 0;border-top:1px dashed var(--line);"></div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;color:var(--sub);"><span>Researched allocation</span><span class="mono" style="color:var(--ink);">$250,000 · 20 names</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;color:var(--sub);margin-top:8px;"><span>Turnaround</span><span class="mono" style="color:var(--ink);">20 minutes</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;color:var(--sub);margin-top:8px;"><span>Six months later</span><span class="mono" style="color:var(--green);font-weight:600;">+23%</span></div>
+      </div>
+      <div style="padding:11px 20px;background:var(--bg);border-top:1px solid var(--line);font-size:12px;color:var(--sub);">Individual result, not typical. Markets went his way.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section style="background:var(--dark);">
+  <div class="wrap" style="padding-top:78px;padding-bottom:78px;text-align:center;max-width:680px;">
+    <h2 style="font-size:38px;line-height:1.1;color:#fff;">See what it found in your portfolio.</h2>
+    <p style="margin-top:18px;font-size:17px;line-height:1.6;color:#aeb9c6;">Tell it what you hold and the number you want, and it builds the plan your advisor never handed you. Free, before a single call.</p>
+    <div style="margin-top:32px;"><a class="cta" style="background:#2fd383;color:#06120c;" href="diagnostic.html?src=growstack-v2">Rebuild my next 90 days →</a></div>
+    <div class="mono" style="margin-top:20px;font-size:12px;letter-spacing:1px;color:#7d8b9d;">Application only past the free plan. The room decides who it wants.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="wrap" style="padding-top:34px;padding-bottom:44px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+    <span style="font-weight:900;letter-spacing:1px;">OUTLIER</span>
+    <span class="mono" style="font-size:11px;color:var(--sub);">APPLICATION ONLY</span>
+  </div>
+  <p style="margin-top:16px;font-size:11.5px;line-height:1.6;color:#9aa3b0;">Outlier is not a registered investment adviser and does not provide personalized investment advice. Nothing on this page is a recommendation to buy or sell any security. Any results shown are individual, not typical, and not a guarantee of future performance. Investing involves the risk of loss.</p>
+</div>
+
+<script>
+  const sel={stack:null,target:null};
+  document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+    const g=c.dataset.g;
+    document.querySelectorAll('.chip[data-g="'+g+'"]').forEach(x=>x.classList.remove('on'));
+    c.classList.add('on'); sel[g]=c.dataset.v;
+    const cta=document.getElementById('mainCta');
+    const u=new URL(cta.href); if(sel.stack)u.searchParams.set('stack',sel.stack); if(sel.target)u.searchParams.set('target',sel.target);
+    cta.href=u.toString();
+  }));
+</script>
+<style>@media(max-width:820px){#receiptGrid,#baGrid{grid-template-columns:1fr !important;}}</style>
+</body>
+</html>
